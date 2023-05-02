@@ -1,4 +1,4 @@
-apiVersion: ignite.weave.works/v1alpha4
+apiVersion: ignite.weave.works/v1alpha2
 kind: VM
 metadata:
     name: my-vm
