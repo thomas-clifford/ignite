@@ -1,14 +1,13 @@
-apiVersion: ignite.weave.works/v1alpha1
+apiVersion: ignite.weave.works/v1alpha4
 kind: VM
 metadata:
-    name: my-vm
-    uid: "5121287c6564adee"
+  name: smoke-test
+  uid: a8eea36f-68e9-4974-83a5-ebf53774670b
 spec:
-    image:
-        ref: weaveworks/ignite-ubuntu:latest
-    cpus: 2
-    diskSize: 4GB
-    memory: 1024MB
-    ssh: {}
+  image:
+    oci: weaveworks/ignite-ubuntu
+  cpus: 2
+  diskSize: 3GB
+  memory: 800MB
 status:
-    state: Created
+  running: true
